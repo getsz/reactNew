@@ -1,0 +1,32 @@
+@import url("./button.less");
+
+.hidden {
+	display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+    font-size: 0.32rem;
+}
+
+.fullScreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#app {
+    &:extend(.fullScreen);
+}
+
+.ui-page {
+    &:extend(.fullScreen);
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}

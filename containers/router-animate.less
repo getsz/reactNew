@@ -1,0 +1,36 @@
+.transitionWrapper-enter {
+    z-index: 100;
+    transform: translate(100%, 0);
+    transition: transform 400ms ease-out;
+}
+
+.transitionWrapper-enter.transitionWrapper-enter-active {
+    transform: translate(0, 0);
+}
+ 
+.transitionWrapper-leave {
+    transform: translate(0, 0);
+    transition: transform 400ms ease;
+}
+ 
+.transitionWrapper-leave.transitionWrapper-leave-active {
+    transform: translate(-30%, 0);
+}
+
+.transitionWrapper-back-enter {
+    transform: translate(-30%, 0);
+    transition: transform 400ms ease;
+}
+ 
+.transitionWrapper-back-enter.transitionWrapper-back-enter-active {
+    transform: translate(0, 0);
+}
+ 
+.transitionWrapper-back-leave {
+    transform: translate(0, 0);
+    transition: transform 400ms ease;
+}
+ 
+.transitionWrapper-back-leave.transitionWrapper-back-leave-active {
+    transform: translate(100%, 0);
+}
