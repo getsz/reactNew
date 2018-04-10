@@ -42,7 +42,7 @@ class ThirdPage extends React.Component {
         return (
             <div>
 
-                szh
+                szh 测试git
             </div>
         );
     }
